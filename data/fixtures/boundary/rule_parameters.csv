@@ -1,0 +1,10 @@
+key,value,description
+clock_skew_tolerance_minutes,5,boundary fixture
+snapshot_ts,2026-03-03T10:00:00-07:00,boundary fixture
+match_qty_tolerance_base,0.005,boundary fixture
+possible_match_window_minutes,60,boundary fixture
+late_low_max_minutes,60,boundary fixture
+handoff_medium_aging_shifts,2,boundary fixture
+handoff_high_aging_shifts,4,boundary fixture
+value_high_cad,500,boundary fixture
+value_medium_cad,100,boundary fixture

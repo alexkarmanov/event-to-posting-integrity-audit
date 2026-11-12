@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+~$*.xlsx
+# Build outputs are reproducible from `python -m stocktrace build`; not tracked.
+output/*
+!output/.gitkeep
+# Scratch / local
+*.sqlite
+*.db
+.env
+# local refresh-test copies
+data/my_copy/

@@ -1,0 +1,4 @@
+sku_id,description,base_uom,category,unit_value_cad_sim,count_tolerance_base,effective_from,effective_to
+SKU-B1,Boundary item one (each),EA,TEST,10,0,,
+SKU-B2,Boundary item two (kg),KG,TEST,2,0.5,,
+SKU-B3,Boundary item three (new item),EA,TEST,3,0,2026-03-02T12:00:00-07:00,

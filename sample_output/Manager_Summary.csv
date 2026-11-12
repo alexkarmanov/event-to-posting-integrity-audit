@@ -1,0 +1,17 @@
+metric,value,definition
+raw_rows_events,652,Rows in business_events.csv
+raw_rows_postings,750,Rows in system_postings.csv
+raw_rows_counts,126,Rows in physical_counts.csv
+valid_events,638,Events that passed validation (denominator for matching)
+issues_total,71,All issues including secondary
+cases_unique,65,Distinct case_key (one real-world problem = one case)
+primary_cases_high,22,Primary cases with severity HIGH
+primary_cases_medium,38,Primary cases with severity MEDIUM
+primary_cases_low,5,Primary cases with severity LOW
+timing_cases_r10,5,Late-posting / boundary timing cases (no loss implied)
+handoff_cases_r11,6,Cross-shift handoff cases
+count_coverage_pct,58.0,COMPLETE-counted SKU-locations / eligible SKU-locations
+count_agreement_pct,86.2,AGREES / comparable counts (excludes partial-not-comparable and void)
+r12_cases,4,Unexplained count variances
+r12_value_cad_sim,823.57,Simulated CAD value of unexplained count variances
+exposure_value_cad_sim,44070.32,"Simulated CAD value (|quantity difference| x simulated unit value) summed over primary cases that carry a quantity difference: R05-R09, R12-R14. Indicator, not a loss estimate"

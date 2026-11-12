@@ -1,0 +1,780 @@
+{
+ "near_misses": [
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000079",
+   "rules_not_expected": [
+    "R04",
+    "R05"
+   ],
+   "why": "twin picks: same SKU/qty/time, distinct events and postings"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000080",
+   "rules_not_expected": [
+    "R04",
+    "R05"
+   ],
+   "why": "twin picks: same SKU/qty/time, distinct events and postings"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000342",
+   "rules_not_expected": [
+    "R10",
+    "R06"
+   ],
+   "why": "posting exactly at shift cutoff is timely"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000415",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "10 LB vs 4.5359 KG rounds to the same 3-dp base quantity"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000343",
+   "rules_not_expected": [
+    "R10"
+   ],
+   "why": "event exactly at shift start belongs to the new shift (label matches)"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000573",
+   "rules_not_expected": [
+    "R06",
+    "R07"
+   ],
+   "why": "cancelled event with no posting is consistent"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000576",
+   "rules_not_expected": [
+    "R06",
+    "R07"
+   ],
+   "why": "cancelled event with no posting is consistent"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000610",
+   "rules_not_expected": [
+    "R11"
+   ],
+   "why": "pending handoff to a shift that is still open is not yet due"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000612",
+   "rules_not_expected": [
+    "R11"
+   ],
+   "why": "pending handoff to a shift that is still open is not yet due"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000411",
+   "rules_not_expected": [
+    "R10"
+   ],
+   "why": "effective time one second before cutoff is still in the same shift"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000042",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000043",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000044",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000049",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000059",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000060",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000061",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000068",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000089",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000095",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000110",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000112",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000146",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000160",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000169",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000174",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000179",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000185",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000214",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000244",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000248",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000271",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000281",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000285",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000290",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000317",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000318",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "business_events.csv",
+   "record_id": "EV-000321",
+   "rules_not_expected": [
+    "R08"
+   ],
+   "why": "case-quantity event vs base-UoM posting: equal after normalization"
+  },
+  {
+   "file": "physical_counts.csv",
+   "record_id": "CC-0077",
+   "rules_not_expected": [
+    "R12"
+   ],
+   "why": "0.3 kg difference is inside the 0.5 kg tolerance"
+  }
+ ],
+ "note": "Generator-side labels. NOT an input to the detection engine.",
+ "planted": [
+  {
+   "file": "system_postings.csv",
+   "note": "exact repeat of a posting row",
+   "record_id": "PO-000189",
+   "rule_id": "R04",
+   "subtype": "IDENTICAL_REDELIVERY"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "same event_id, different quantity",
+   "record_id": "EV-000327",
+   "rule_id": "R04",
+   "subtype": "CONFLICTING_CONTENT"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "same posting_id, different quantity; its event has a quarantined counterpart",
+   "record_id": "PO-000498",
+   "rule_id": "R04",
+   "subtype": "CONFLICTING_CONTENT"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "blank quantity (rejected, not zero)",
+   "record_id": "EV-000630",
+   "rule_id": "R01",
+   "subtype": "MISSING_FIELD"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "non-numeric quantity",
+   "record_id": "EV-000631",
+   "rule_id": "R01",
+   "subtype": "INVALID_QUANTITY"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "blank sku_id",
+   "record_id": "EV-000632",
+   "rule_id": "R01",
+   "subtype": "MISSING_FIELD"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "blank system_post_timestamp",
+   "record_id": "PO-000737",
+   "rule_id": "R01",
+   "subtype": "MISSING_FIELD"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "negative posting quantity",
+   "record_id": "PO-000738",
+   "rule_id": "R01",
+   "subtype": "NEGATIVE_QUANTITY"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "event after extract snapshot",
+   "record_id": "EV-000633",
+   "rule_id": "R01",
+   "subtype": "FUTURE_TIMESTAMP"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "timestamp without offset",
+   "record_id": "EV-000634",
+   "rule_id": "R01",
+   "subtype": "INVALID_TIMESTAMP"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "valid zero-quantity receipt with zero posting (warning only)",
+   "record_id": "EV-000635",
+   "rule_id": "R01",
+   "subtype": "ZERO_QTY"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "location not in master",
+   "record_id": "EV-000636",
+   "rule_id": "R02",
+   "subtype": "UNKNOWN_LOCATION"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "SKU effective only from 2026-02-11 12:00",
+   "record_id": "EV-000637",
+   "rule_id": "R02",
+   "subtype": "SKU_NOT_EFFECTIVE"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "SKU retired 2026-02-10 00:00",
+   "record_id": "EV-000638",
+   "rule_id": "R02",
+   "subtype": "SKU_NOT_EFFECTIVE"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "unknown SKU on posting",
+   "record_id": "PO-000740",
+   "rule_id": "R02",
+   "subtype": "UNKNOWN_SKU"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "location inactive since 2026-01-15",
+   "record_id": "PO-000741",
+   "rule_id": "R02",
+   "subtype": "LOCATION_NOT_EFFECTIVE"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "shift label not in shift calendar",
+   "record_id": "EV-000639",
+   "rule_id": "R02",
+   "subtype": "UNKNOWN_SHIFT"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "BLK-03 becomes effective only on 2026-02-15",
+   "record_id": "EV-000640",
+   "rule_id": "R02",
+   "subtype": "LOCATION_NOT_EFFECTIVE"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "PLT is not a defined UoM",
+   "record_id": "EV-000641",
+   "rule_id": "R03",
+   "subtype": "UNKNOWN_UOM_CODE"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "KG exists but not for this EA-based SKU",
+   "record_id": "EV-000642",
+   "rule_id": "R03",
+   "subtype": "NO_CONVERSION_FOR_SKU"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "BX is not a defined UoM",
+   "record_id": "PO-000742",
+   "rule_id": "R03",
+   "subtype": "UNKNOWN_UOM_CODE"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "second ISSUE posting for one pick",
+   "record_id": "EV-000269",
+   "rule_id": "R05",
+   "subtype": "DUPLICATE_POSTING"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "second RECEIPT posting",
+   "record_id": "EV-000274",
+   "rule_id": "R05",
+   "subtype": "DUPLICATE_POSTING"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "second TRANSFER_OUT leg",
+   "record_id": "EV-000349",
+   "rule_id": "R05",
+   "subtype": "DUPLICATE_POSTING"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "pick never posted",
+   "record_id": "EV-000124",
+   "rule_id": "R06",
+   "subtype": "UNPOSTED"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "receipt never posted",
+   "record_id": "EV-000247",
+   "rule_id": "R06",
+   "subtype": "UNPOSTED"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "pick in last closed shift never posted",
+   "record_id": "EV-000554",
+   "rule_id": "R06",
+   "subtype": "UNPOSTED"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "ERP posting attempt FAILED",
+   "record_id": "EV-000444",
+   "rule_id": "R06",
+   "subtype": "FAILED_POSTING"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "posting lost its source reference; unique candidate",
+   "record_id": "EV-000381",
+   "rule_id": "R06",
+   "subtype": "POSSIBLE_MATCH"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "references an event that does not exist",
+   "record_id": "PO-000746",
+   "rule_id": "R07",
+   "subtype": "ORPHAN_REFERENCE"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "no source and no candidate event",
+   "record_id": "PO-000747",
+   "rule_id": "R07",
+   "subtype": "NO_SOURCE_REFERENCE"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "event cancelled but posting remains",
+   "record_id": "PO-000210",
+   "rule_id": "R07",
+   "subtype": "POSTING_FOR_CANCELLED_EVENT"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "posted 10 base units short",
+   "record_id": "EV-000254",
+   "rule_id": "R08",
+   "subtype": "QUANTITY_MISMATCH"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "case-quantity event; posting 5 base units short after normalization",
+   "record_id": "EV-000283",
+   "rule_id": "R08",
+   "subtype": "QUANTITY_MISMATCH"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "TRANSFER_OUT leg 5 short",
+   "record_id": "EV-000178",
+   "rule_id": "R08",
+   "subtype": "QUANTITY_MISMATCH"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "KG posting 3 kg over",
+   "record_id": "EV-000500",
+   "rule_id": "R08",
+   "subtype": "QUANTITY_MISMATCH"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "posting from a different pick bin",
+   "record_id": "EV-000337",
+   "rule_id": "R09",
+   "subtype": "LOCATION_MISMATCH"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "posting SKU differs from event SKU",
+   "record_id": "EV-000373",
+   "rule_id": "R09",
+   "subtype": "SKU_MISMATCH"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "TRANSFER_IN leg missing",
+   "record_id": "EV-000424",
+   "rule_id": "R09",
+   "subtype": "MISSING_LEG"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "TRANSFER_IN lands in a different bin",
+   "record_id": "EV-000478",
+   "rule_id": "R09",
+   "subtype": "LOCATION_MISMATCH"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "pick posted as ADJUSTMENT",
+   "record_id": "EV-000531",
+   "rule_id": "R09",
+   "subtype": "MOVEMENT_TYPE_MISMATCH"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "posted 12 min after cutoff (LOW)",
+   "record_id": "EV-000001",
+   "rule_id": "R10",
+   "subtype": "LATE_POSTING"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "posted 95 min after cutoff (MEDIUM)",
+   "record_id": "EV-000268",
+   "rule_id": "R10",
+   "subtype": "LATE_POSTING"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "posted after the next cutoff too (HIGH)",
+   "record_id": "EV-000194",
+   "rule_id": "R10",
+   "subtype": "LATE_POSTING"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "effective time one second into the next shift",
+   "record_id": "EV-000276",
+   "rule_id": "R10",
+   "subtype": "EFFECTIVE_SHIFT_MISMATCH"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "label says previous shift",
+   "record_id": "EV-000519",
+   "rule_id": "R10",
+   "subtype": "SHIFT_LABEL_MISMATCH"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "pending, handed to shift 2 which has closed",
+   "record_id": "EV-000643",
+   "rule_id": "R11",
+   "subtype": "UNRESOLVED_HANDOFF_AFTER_CUTOFF"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "pending, handed to shift 6 which has closed",
+   "record_id": "EV-000644",
+   "rule_id": "R11",
+   "subtype": "UNRESOLVED_HANDOFF_AFTER_CUTOFF"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "pending, handed to shift 8 which has closed",
+   "record_id": "EV-000645",
+   "rule_id": "R11",
+   "subtype": "UNRESOLVED_HANDOFF_AFTER_CUTOFF"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "pending, no receiving shift named",
+   "record_id": "EV-000646",
+   "rule_id": "R11",
+   "subtype": "PENDING_NO_HANDOFF"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "completed, handoff entry still OPEN after the receiving shift closed",
+   "record_id": "EV-000301",
+   "rule_id": "R11",
+   "subtype": "STALE_OPEN_HANDOFF"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "pending on the floor, already posted in ERP",
+   "record_id": "EV-000418",
+   "rule_id": "R11",
+   "subtype": "PENDING_BUT_POSTED"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "reversal points to a non-existent event",
+   "record_id": "EV-000648",
+   "rule_id": "R14",
+   "subtype": "BROKEN_REFERENCE"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "reversal quantity 3 CS vs original 4 CS",
+   "record_id": "EV-000650",
+   "rule_id": "R14",
+   "subtype": "QUANTITY_MISMATCH"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "reversal posting 3 CS vs reversed posting 4 CS",
+   "record_id": "PO-000751",
+   "rule_id": "R14",
+   "subtype": "POSTING_QTY_MISMATCH"
+  },
+  {
+   "file": "system_postings.csv",
+   "note": "reversal posting references a missing posting",
+   "record_id": "PO-000242",
+   "rule_id": "R14",
+   "subtype": "BROKEN_POSTING_REFERENCE"
+  },
+  {
+   "file": "business_events.csv",
+   "note": "pick of 265 from a bin holding 240",
+   "record_id": "SKU-1026|PK-A02",
+   "rule_id": "R13",
+   "subtype": "IMPOSSIBLE_BALANCE"
+  },
+  {
+   "file": "physical_counts.csv",
+   "note": "counted 6 below ledger and system",
+   "record_id": "CC-0061",
+   "rule_id": "R12",
+   "subtype": "UNEXPLAINED_COUNT_VARIANCE"
+  },
+  {
+   "file": "physical_counts.csv",
+   "note": "high-value SKU short by 5 (simulated value above HIGH threshold)",
+   "record_id": "CC-0010",
+   "rule_id": "R12",
+   "subtype": "UNEXPLAINED_COUNT_VARIANCE"
+  },
+  {
+   "file": "physical_counts.csv",
+   "note": "overage of 4",
+   "record_id": "CC-0078",
+   "rule_id": "R12",
+   "subtype": "UNEXPLAINED_COUNT_VARIANCE"
+  },
+  {
+   "file": "physical_counts.csv",
+   "note": "KG count 3 kg over (tolerance 0.5)",
+   "record_id": "CC-0041",
+   "rule_id": "R12",
+   "subtype": "UNEXPLAINED_COUNT_VARIANCE"
+  },
+  {
+   "file": "physical_counts.csv",
+   "note": "blank counted_qty on a COMPLETE count (rejected; not the same as zero)",
+   "record_id": "CC-0173",
+   "rule_id": "R01",
+   "subtype": "MISSING_FIELD"
+  },
+  {
+   "file": "physical_counts.csv",
+   "note": "DZ is not a defined UoM",
+   "record_id": "CC-0174",
+   "rule_id": "R03",
+   "subtype": "UNKNOWN_UOM_CODE"
+  },
+  {
+   "file": "physical_counts.csv",
+   "note": "count against an inactive location",
+   "record_id": "CC-0175",
+   "rule_id": "R02",
+   "subtype": "LOCATION_NOT_EFFECTIVE"
+  },
+  {
+   "file": "physical_counts.csv",
+   "note": "count row delivered twice",
+   "record_id": "CC-0001",
+   "rule_id": "R04",
+   "subtype": "IDENTICAL_REDELIVERY"
+  }
+ ],
+ "seed": 20260209
+}

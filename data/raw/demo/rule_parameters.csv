@@ -1,0 +1,11 @@
+key,value,description
+snapshot_ts,2026-02-12T09:00:00-07:00,Extract time; later records are invalid; shifts ending after it are open
+timezone_note,UTC-07:00 fixed (no DST change in window),Local display only; comparisons use UTC
+match_qty_tolerance_base,0.005,Event vs posting quantity tolerance in base UoM
+possible_match_window_minutes,60,Max |posting - event| time for a POSSIBLE_MATCH
+clock_skew_tolerance_minutes,5,A posting earlier than its event by more than this is R10 POSTED_BEFORE_EVENT
+late_low_max_minutes,60,Late posting up to this many minutes after cutoff is LOW
+handoff_medium_aging_shifts,2,Handoff aging (closed shifts) for MEDIUM
+handoff_high_aging_shifts,4,Handoff aging (closed shifts) for HIGH
+value_high_cad,500,Simulated CAD value at/above which value-driven rules are HIGH
+value_medium_cad,100,Simulated CAD value at/above which LOW is raised to MEDIUM

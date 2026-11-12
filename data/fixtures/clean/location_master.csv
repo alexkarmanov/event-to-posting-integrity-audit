@@ -1,0 +1,10 @@
+location_id,zone,active_flag,effective_from,effective_to
+RCV-01,RECEIVING,Y,,
+BLK-01,BULK,Y,,
+BLK-02,BULK,Y,,
+PK-A01,PICK-A,Y,,
+PK-A02,PICK-A,Y,,
+PK-B01,PICK-B,Y,,
+SHP-01,SHIPPING,Y,,
+PK-Z99,PICK-Z,N,,2026-01-15T00:00:00-07:00
+BLK-03,BULK,N,2026-02-15T00:00:00-07:00,
